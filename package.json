@@ -1,0 +1,24 @@
+{
+  "name": "marvel-app",
+  "version": "1.0.0",
+  "description": "marvel app using html, css, and js",
+  "main": "javascript.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3030\" \"open http://localhost:3030\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clintrizzo/marvel-app.git"
+  },
+  "author": "Clint Rizzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clintrizzo/marvel-app/issues"
+  },
+  "homepage": "https://github.com/clintrizzo/marvel-app#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
+  }
+}
