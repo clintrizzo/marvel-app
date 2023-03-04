@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+  --backgroundColor: #eee;
+  --iconBackground: rgb(220, 23, 23)
+}
+
+#theme-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  cursor: pointer;
+  margin-left: .5rem;
+  height:4.5rem;
+  line-height: 4.5rem;
+  width:4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  background-color: var(--iconBackground);
+  color: white
+}
+
+.changeTheme {
+  background: #1D1E22;
+  color: var(--backgroundColor);
+}
