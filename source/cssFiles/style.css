@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --red:rgb(162, 22, 22);
+    --red:rgb(220, 23, 23);
     --black:#192a56;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
-    --navbar: #515661;
+    --navbar: #a6a8ad;
     --white: #eaeaea;
     
 }
@@ -75,7 +75,7 @@ header .navbar a:hover{
 
 /* search bar for page */
 .searchForm{
-    color: white;
+    color: black;
     font-size: 15px;
     padding-left: 100px;
 }
@@ -86,7 +86,7 @@ header .navbar a:hover{
     width: 200px;
     height: 25px;
     padding: 5px;
-    color: white
+    color: black
 }
 
 #list{ 
