@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comic Attack</title>
     <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<!-- font awesome cdn link  -->
+
+<!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 <!-- custom css file link  -->
@@ -24,13 +26,12 @@
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
-        <a href="#discounts">Discounts</a>
-        <a href="#heroes">Comic Heroes</a>
+        <a href="#list">Comic Heroes</a>
         <a href="#villians">Comic Villians</a>
     </nav>
 
     <form id="search-form" class="searchForm" method="get" action="index.html">
-        <input id="searchbar" class="search-query" onkeyup="search_animal()" type="text"
+        <input id="searchbar" class="search-query" onkeyup="search_animal()" type="search"
         name="search" placeholder="Search for comic book...">        
         <label for="search-box" class="fas fa-search"></label>
     </form>
@@ -46,6 +47,47 @@
 
 <!-- header section ends-->
 
+
+<!-- swiper section starts -->
+<section class="home" id="home">
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Ten percent off all books</span>
+                    <h3>Volumes 10% off!</h3>
+                    <p>Want to collect all the single issues but don't have the time? Collect the volumes instead to complete specific story lines today!</p>
+                </div>
+                <div class="image">
+                    <img src="source/images/discountComics/thorbook.spg.jpeg" alt="thor book">
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Free one shot issues</span>
+                    <h3>One shot discounts</h3>
+                    <p>Spend forty dollars or more and pick a one shot issue for free from the one shot bin. Limit one per customer. </p>
+                </div>
+                <div class="image">
+                    <img src="source/images/discountComics/oneShot.png" alt="oneShot">
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Free shipping discount</span>
+                    <h3>Free shipping</h3>
+                    <p>Spend over 100$ and receive free shipping. Shipping discount will automatically be applied before payment confirmation</p>
+                </div>
+                <div class="image">
+                    <img src="source/images/discountComics/freeDelivery.png" alt="freeShipping">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- swiper section ends -->
+
+
 <!-- test for input section -->
 <ol id='list'> 
     <li class="characters">Cat</li> 
@@ -60,15 +102,15 @@
     <li class="characters">Donkey</li> 
     <li class="characters">Horse</li> 
 </ol> 
+</body>
 
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/c88540de6b.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://livejs.com/live.js"></script>
+<!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
 
 <!-- custom js file link  -->
 <script src="source/javascriptFiles/javascript.js"></script>
 <script src="source/javascriptFiles/nightmode.js"></script>
-
-</body>
 </html>
