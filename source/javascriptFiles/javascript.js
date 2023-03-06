@@ -15,7 +15,7 @@ function search_animal() {
 } 
 
 
-// swiper
+// swiper for discounts
 var swiper = new Swiper(".home-slider", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -30,3 +30,20 @@ var swiper = new Swiper(".home-slider", {
     },
     loop:true,
   });
+
+
+// swiper for single shot issues
+var swiper = new Swiper(".oneShot-slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  speed: 2800,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop:true,
+});

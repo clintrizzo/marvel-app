@@ -1,0 +1,79 @@
+:root{
+  --red:rgb(220, 23, 23);
+  --black:#192a56;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  --navbar: #a6a8ad;
+  --white: #eaeaea;
+}
+
+.oneShotIssues .oneShot-slider .slide{
+  background-color: var(--light-color);
+  padding: 30px 10px;
+  display:block;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home .oneShot-slider .slide .box-container{
+  flex:1 1 30rem;
+}
+
+.oneShotIssues .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap:1.5rem;
+}
+
+.oneShotIssues .box-container .box{
+  padding:2.5rem;
+  background:#fff;
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.oneShotIssues .box-container .box img{
+  height:17rem;
+  margin:1rem 0;
+}
+
+.oneShotIssues h1{
+  color:var(--white);
+  font-size: 2.5rem;
+}
+
+.oneShotIssues .box-container .box .stars{
+  padding:1rem 0;
+}
+
+.oneShotIssues .box-container .box .stars i{
+  font-size: 1.7rem;
+  color:var(--green);
+}
+
+.oneShotIssues .box-container .box span{
+  color:var(--green);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.oneShotIssues .box-container .box a{
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  padding:.5rem 1.5rem;
+  background-color: #e9e9e9;
+  color: var(--black);
+  flex: content;
+  justify-content: space-between;
+  margin: 7.5px;
+}
+
+.oneShotIssues .box-container .box a:hover{
+  color:#fff;
+  background: var(--red);
+}
