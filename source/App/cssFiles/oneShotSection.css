@@ -1,9 +1,10 @@
 :root{
   --red:rgb(220, 23, 23);
   --oneShotBlack:#050d20;
-  --light-color:#a6a8ad;
+  --light-color:#c6c6c6;
   --oneShotCover:rgba(0,0,0,.1);
   --white: #eaeaea;
+  --stars: gold
   
 }
 
@@ -12,7 +13,7 @@
 }
 
 .slide-container{
-  max-width: 1400px;
+  max-width: 1480px;
   width: 100%;
   padding: 40px 0;
 }
@@ -78,8 +79,8 @@
 
 .card-image{
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 225px;
+  width: 225px;
   border-radius: 50%;
   background: #FFF;
   padding: 3px;
@@ -90,10 +91,9 @@
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4070F4;
 }
 
-.name{
+.characters{
   font-size: 18px;
   font-weight: 500;
   color: #333;
@@ -101,6 +101,14 @@
 
 .stars{
   font-size: 15px;
+}
+
+.fa-star{
+  color: var(--oneShotBlack)
+}
+
+.checked{
+  color: var(--stars)
 }
 
 .description{
@@ -148,10 +156,12 @@
 
 .swiper-button-next{
   right: 0;
+  color: var(--oneShotBlack);
 }
 
 .swiper-button-prev{
   left: 0;
+  color: var(--oneShotBlack);
 }
 
 .swiper-pagination-bullet{

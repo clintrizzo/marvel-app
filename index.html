@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 <!-- custom css file link  -->
-    <link rel="stylesheet" href="source/cssFiles/header.css">
-    <link rel="stylesheet" href="source/cssFiles/nightmode.css">
-    <link rel="stylesheet" href="source/cssFiles/oneShotSection.css">
+    <link rel="stylesheet" href="source/App/cssFiles/header.css">
+    <link rel="stylesheet" href="source/App/cssFiles/nightmode.css">
+    <link rel="stylesheet" href="source/App/cssFiles/oneShotSection.css">
 </head>
 <body>
     
@@ -32,7 +32,7 @@
     </nav>
 
     <form id="search-form" class="searchForm" method="get" action="index.html">
-        <input id="searchbar" class="search-query" onkeyup="search_animal()" type="search"
+        <input id="searchbar" class="search-query" onkeyup="search_character()" type="search"
         name="search" placeholder="Search for comic book...">        
         <label for="search-box" class="fas fa-search"></label>
     </form>
@@ -89,329 +89,7 @@
 <!-- swiper section for discounts starts -->
 
 <!-- one shot section  starts-->
-
-<section class="oneShotIssues" id="oneShot">
-    <h1 class="heading" id="oneShotHeading"> Popular One Shots </h1>
-    <div class="slide-container swiper">
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">David Dell</h2>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                        <center><span id="oneShotPricing">$3.99</span></center>
-                        <div>
-                            <a href="#" class="fas fa-heart" id="oneShotIcon"></a>
-                            <a href="#" class="fas fa-shopping-cart" id="oneShotIcon"></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
-
+<div id="includeOneShotHTML"></div>
 <!-- one shot section ends -->
 
 <!-- test for input section -->
@@ -430,13 +108,20 @@
 </ol> 
 </body>
 
+<!-- jquery section for oneshotsection -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="source/App/javascriptFiles/oneShotSection.js"></script>
+
+
 <!-- swiper js -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script src="https://kit.fontawesome.com/c88540de6b.js" crossorigin="anonymous"></script>
 <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
 
+
 <!-- custom js file link  -->
-<script src="source/javascriptFiles/javascript.js"></script>
-<script src="source/javascriptFiles/nightmode.js"></script>
+<script src="source/App/javascriptFiles/javascript.js"></script>
+<script src="source/App/javascriptFiles/nightmode.js"></script>
+
 </html>
