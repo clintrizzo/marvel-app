@@ -1,8 +1,7 @@
 :root{
-  --green:#27ae60;
   --black:#192a56;
-  --light-color:#666;
   --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  --light-color:#c6c6c6;
 }
 
 .comicSelection{
@@ -24,68 +23,85 @@
   gap:1rem;
 }
 
+/* card boxes */
 .box{
   padding:2rem;
-  background:#fff;
   border-radius: 5rem;
   border:.1rem solid rgba(0,0,0,.2);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--light-color);
   position: relative;
   overflow: hidden;
   text-align: center;
   width: 275px;
-  height: 375px;
-  /* position: relative;
+  height: 455px;
+  position: relative;
+  transition: transform 1s;
   transform-style: preserve-3d;
-  transition: all 0.8s ease; */
 }
 
-.comicIssue{
-  height: 300px;
-  margin:1rem 0;
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
 }
 
-.front-image,
-.comic-issue{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
+/* card imaging size */
+.cardSelection{
+  height: 307px;
+  width: 200px;
+  margin-top: 15px;
+  border-radius: 3rem;
 }
 
+/* background of image */
 .front-image{
   position: relative;
   row-gap: 5px;
-  padding: 20px 0;
+  background-color: black;
+  width: 100%;
+  height: 337px;
+  border-radius: 5rem;
+  backface-visibility: hidden;
 }
+
+#comicWantIcon, #buyComicIcon{
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  padding:.5rem 1.5rem;
+  background-color: #e9e9e9;
+  color: var(--black);
+  flex: content;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#comicWantIcon:hover, #buyComicIcon:hover{
+  color:#fff;
+  background: var(--red);
+} 
+
+#comicPricing{
+  font-weight: bolder;
+  font-size: 2rem;
+  color: white
+}
+
+.rating{
+  padding-bottom: 7px;
+  font-size: 1.5rem;
+}
+
+.comicSelection .rating .checked{
+  color: gold
+}
+
+.comicSelection .fa-star{
+  color: white
+}
+
 .front-card{
   flex-direction: row;
-}
-
-.background{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 60%;
-  width: 100%;
-  background-color: var(--oneShotBlack);
-  border-radius: 25px 25px;
-}
-
-.background::before,
-.background::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: var(--oneShotBlack);
-}
-
-.background::after{
-  border-radius: 0 50px 0 0;
-  background-color: #FFF;
 }
 
 h3{
