@@ -1,0 +1,122 @@
+:root{
+  --black:#192a56;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  --light-color:#c6c6c6;
+}
+
+.comicSelection{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.characters{
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:1rem;
+}
+
+/* card boxes */
+.box{
+  padding:2rem;
+  border-radius: 5rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: var(--light-color);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 275px;
+  height: 480px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+/* card imaging size */
+.cardSelection{
+  height: 307px;
+  width: 200px;
+  margin-top: 15px;
+  border-radius: 3rem;
+}
+
+.comicCharacters{
+  color: white;
+  padding-top: 5px;
+}
+
+/* background of image */
+.front-image{
+  position: relative;
+  row-gap: 5px;
+  background-color: black;
+  width: 100%;
+  height: 337px;
+  border-radius: 5rem;
+  backface-visibility: hidden;
+}
+
+#comicWantIcon, #buyComicIcon{
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  padding:.5rem 1.5rem;
+  background-color: #e9e9e9;
+  color: var(--black);
+  flex: content;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#comicWantIcon:hover, #buyComicIcon:hover{
+  color:#fff;
+  background: var(--red);
+} 
+
+#comicPricing{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: white
+}
+
+.rating{
+  padding-bottom: 7px;
+  font-size: 1rem;
+}
+
+.comicSelection .rating .checked{
+  color: gold
+}
+
+.comicSelection .fa-star{
+  color: white
+}
+
+.front-card{
+  flex-direction: row;
+}
+
+h3{
+  color:var(--black);
+  font-size: 2.5rem;
+}
+
+span{
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
