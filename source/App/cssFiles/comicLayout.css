@@ -14,7 +14,8 @@
 .characters{
   color: white;
   text-align: center;
-  padding: 35px;
+  padding: 15px;
+  font-size: 30px;
 }
 
 .box-container{
@@ -33,7 +34,7 @@
   overflow: hidden;
   text-align: center;
   width: 275px;
-  height: 455px;
+  height: 480px;
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -52,6 +53,11 @@
   width: 200px;
   margin-top: 15px;
   border-radius: 3rem;
+}
+
+.comicCharacters{
+  color: white;
+  padding-top: 5px;
 }
 
 /* background of image */
@@ -83,13 +89,13 @@
 
 #comicPricing{
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white
 }
 
 .rating{
   padding-bottom: 7px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .comicSelection .rating .checked{
